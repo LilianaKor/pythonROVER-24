@@ -60,3 +60,8 @@ print(chiefortho1.perform('unique'))
 
 #print(chiefortho1.country)
 #print(chiefortho1.learn())
+
+home = Professional("Jessice", "Smith", "Bones")
+
+print(jessica_nurse.lname)
+
