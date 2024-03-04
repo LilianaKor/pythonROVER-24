@@ -21,7 +21,7 @@
 # else:
 #     print("Not equal five")
 
-# num = 7
+# num = 9
 # if num == 5:
 #     print('Five!')
 # elif num < 5:
