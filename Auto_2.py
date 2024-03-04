@@ -21,13 +21,13 @@
 # else:
 #     print("Not equal five")
 
-# num = 9
-# if num == 5:
-#     print('Five!')
-# elif num < 5:
-#     print('Less then five')
-# else:
-#     print("More then five")
+ num = 9
+if num == 5:
+    print('Five!')
+elif num < 5:
+    print('Less then five')
+else:
+    print("More then five")
 
 # print(2.1)
 # num = 0
