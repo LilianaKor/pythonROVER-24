@@ -1,5 +1,5 @@
 #print("Hello Santa Monica!")
-# number = 5
+# number = skills_area
 # print(number)
 # print(id(number))
 # message = 'Hello'

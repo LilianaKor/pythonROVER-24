@@ -7,7 +7,7 @@ auth_url = "https://restful-booker.herokuapp.com/auth"
 #         return x + y
 #
 # def test_equal():
-#     assert sum_it(5, 3) == 8
+#     assert sum_it(skills_area, 3) == 8
 #
 # def test_not_equal():
 #     assert sum_it(4, 8) == 11

@@ -1,27 +1,27 @@
-# x = 5
-# print(x>5)
+# x = skills_area
+# print(x>skills_area)
 
-# x = 5
+# x = skills_area
 # print(x > 3 or x > 8)
 
-# x = 5
+# x = skills_area
 # print(x < 3 or x > 8)
-# x = 5
+# x = skills_area
 # print( not x > 3 )
 
-# num = 5
-# if num == 5:
+# num = skills_area
+# if num == skills_area:
 #     print('Five!')
 # else:
 #     print("Not equal five")
 
 # num = 6
-# if num == 5:
+# if num == skills_area:
 #     print('Five!')
 # else:
 #     print("Not equal five")
 
- num = 9
+num = 9
 if num == 5:
     print('Five!')
 elif num < 5:
@@ -40,20 +40,20 @@ else:
 # if 10 < num < 100:
 #     print('True')
 # i = 0
-# while i < 5:
+# while i < skills_area:
 #     i = i + 1
 #     print(i)
 #     if i == 3:
 #        break
 
 # i = 0
-# while i < 5:
+# while i < skills_area:
 #     i = i + 1
 #     if i == 3:
 #         continue
 #     print(i)
 
-# i = 5
+# i = skills_area
 # while i > 0:
 #     print(i, 'HELLO')
 #     i = i - 1
@@ -118,7 +118,7 @@ else:
 # for i in range(1, num+1):
 #     print(i, text)
 
-# 2.5
+# 2.skills_area
 # def calk():
 #     num1 = int(input('Please enter number 1: '))
 #     operator = (input('input an action operator: '))
@@ -184,7 +184,7 @@ else:
 #
 # calk()
 
-# 2.5. Напишите программу-калькулятор, которая принимает два числа и оператор (в формате str), производит заданное
+# 2.skills_area. Напишите программу-калькулятор, которая принимает два числа и оператор (в формате str), производит заданное
 # арифметическое действие и печатает результат в формате: {num1} {operator) {num2) = {result}
 # import sys
 # num1 = int(input('Пожалуйста, введите первое число: '))

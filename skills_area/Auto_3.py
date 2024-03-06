@@ -7,7 +7,7 @@
 # my_list2 = list(sentence)
 # print(my_list2)
 
-# numbers = [1, 2, 3, 5, 6]
+# numbers = [1, 2, 3, skills_area, 6]
 # print(id(numbers))
 
 # for number in numbers:
@@ -29,7 +29,7 @@
 # numbers.extend(numbers2)
 # print(numbers)
 
-# numbers = [1, 2, 3, 5, 6, 4, 10, 9, 10, 10]
+# numbers = [1, 2, 3, skills_area, 6, 4, 10, 9, 10, 10]
 # print(id(numbers))
 #
 # numbers.sort()
@@ -42,7 +42,7 @@
 # numbers.reverse()
 # print(numbers)
 
-##get from 1 to 5
+##get from 1 to skills_area
 # print(numbers[0: 4])
 # print(numbers[::-1])
 
@@ -69,11 +69,11 @@
 # print(id(num5))
 
 #TUPLES
-# my_tuple = (1, 'apple', None, 2.5)
+# my_tuple = (1, 'apple', None, 2.skills_area)
 # print(my_tuple)
 # print(type(my_tuple))
 #
-# my_tuple1 = 1,5, 6, 8
+# my_tuple1 = 1,skills_area, 6, 8
 # print(my_tuple1)
 #
 # print(tuple(numbers))
@@ -81,7 +81,7 @@
 # def func(*args):
 #     for item in args:
 #         yield item*item
-# for i in func(1, 2, 3, 4, 5, 6):
+# for i in func(1, 2, 3, 4, skills_area, 6):
 #      print(i)
 #
 # my_dict = {
@@ -123,7 +123,7 @@
 
 #3.2.1
 # list_1 = ['Hi', 'ananas', 2, 75, 'pizza', 36, 100]
-# print(list_1[2] + list_1[3] + list_1[5] + list_1[6])
+# print(list_1[2] + list_1[3] + list_1[skills_area] + list_1[6])
 # #3.2.2
 # list_1 = ['Hi', 'ananas', 2, 75, 'pizza', 36, 100]
 # strings = []
@@ -160,7 +160,7 @@
 # else:
 #     print('equal')
 
-# 3.5. Создайте словарь film c ключами title, director, year, budget, main_actor, slogan. В значения можете передать информацию
+# 3.skills_area. Создайте словарь film c ключами title, director, year, budget, main_actor, slogan. В значения можете передать информацию
 #     о вашем любимом фильме.
 #     - распечатайте только ключи
 #     - распечатайте только значения
@@ -173,7 +173,7 @@
 #     "main_actor": "LilianNik",
 #     "slogan": "Happiness is where we are!"
 #}
-#  3.5.1
+#  3.skills_area.1
 # for item in myFilm.items():
 #     key, value = item
 #     print(item)
@@ -189,7 +189,7 @@
 # }
 # for value in myFilm.values():
 #     print(value)
-#  3.5.2
+#  3.skills_area.2
 # myFilm ={
 #     "title": "Mysoul",
 #     "director": "Santa Monica",
@@ -210,8 +210,8 @@
 # sum_digits = sum(my_dictionary.values())
 # print(sum_digits)
 
-#  3.7. Удалите повторяющиеся значения из списка [1, 2, 3, 4, 5, 3, 2, 1]
-# my_list3 = [1, 2, 3, 4, 5, 3, 2, 1]
+#  3.7. Удалите повторяющиеся значения из списка [1, 2, 3, 4, skills_area, 3, 2, 1]
+# my_list3 = [1, 2, 3, 4, skills_area, 3, 2, 1]
 # new_list = list(set(my_list3))
 # print(new_list)
 #  3.7
@@ -221,7 +221,7 @@
 #
 # print(list_to_set(new_list))
 #
-# 3.8. Даны два множества: set1 = {'a', 'z', 1, 5, 9, 12, 100, 'b'}, set2 = {5, 'z', 1, 8, 9, 21, 100, 'l', 785}
+# 3.8. Даны два множества: set1 = {'a', 'z', 1, skills_area, 9, 12, 100, 'b'}, set2 = {skills_area, 'z', 1, 8, 9, 21, 100, 'l', 785}
 #      - найдите значения, которые встречаются в обоих множествах
 #      - найдите значения, которые не встречаются в обоих множествах
 #      - проверьте являются ли эти множества подмножествами друг друга
