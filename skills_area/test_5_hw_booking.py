@@ -1,9 +1,10 @@
 import pytest
 import requests
-#import response
+import response
 
 base_url = 'https://restful-booker.herokuapp.com/booking'
 auth_url = 'https://restful-booker.herokuapp.com/auth'
+#update_url =
 
 def test_get_token():
     authdata = {
@@ -14,7 +15,7 @@ def test_get_token():
     token = response.json()["token"]
     print(token)
     assert response.status_code == 200
-    return  token
+    return token
 
 
 # def sum_it(x,y):
@@ -35,14 +36,14 @@ def test_get_code():
 def test_get_booking_by_id():
     response = requests.get(f'{base_url}/19')
     response_data = response.json()
-   # print(response_data)
+    print(response_data)
     expected_keys = [
         "firstname",
         "lastname",
         "totalprice",
         "depositpaid",
         "bookingdates"
-       # "additionalneeds"
+        #"additionalneeds"
     ]
 
     assert response.status_code == 200
@@ -52,7 +53,7 @@ def test_get_booking_by_id():
     assert isinstance(response_data.get('totalprice'),int)
 
 
-def test_create_booking():
+def test_create_bboking():
     payload = {
         "firstname": "Alex",
         "lastname": "Brown",
@@ -72,8 +73,8 @@ def test_create_booking():
 
 
 def test_check_created_booking():
-    bookingid = test_create_booking()
-    response = requests.get(f'{base_url}/{bookingid}')
+
+    response = requests.get(f'{base_url}')
     print(response.json())
     assert response.status_code == 200
     assert response.json()["firstname"] == "Alex"
@@ -81,12 +82,13 @@ def test_check_created_booking():
 
 
 def test_update_booking():
-    bookingid = test_create_booking()
+    booking_id = test_created_booking()
     token_value = test_get_token()
+
     payload = {
         "firstname": "Anna",
         "lastname": "Brown",
-        "totalprice": 900,
+        "totalprice": 700,
         "depositpaid": True,
         "bookingdates": {
             "checkin": "2018-01-01",
@@ -96,12 +98,22 @@ def test_update_booking():
 
     }
 
-
-    response = requests.put(f'{base_url}/{bookingid}', json=payload, headers={'Cookie': f'token= {token_value}'})
+response = requests.put(f'{base_url}/{bookingid}', json=payload, headers={'Cookie': f'token={token_value}'})
     assert response.status_code == 200
     response_2 = requests.get(f'{base_url}/{bookingid}')
     print(response_2.json())
-    assert response_2.json()['additionalneeds'] == 'Spa'
+    assert response_2.json()['addtionalneeds'] == 'Spa'
+
+#{'Cookie': f'token={token_value}'}
+
+
+
+
+
+
+
+
+
 
 
 
