@@ -41,7 +41,7 @@ driver.find_element(*GOOGLE_SEARCH_FIELD).send_keys("Anekdot", Keys.ENTER)
 # search.send_keys('Watches')
 
 # we are waiting for 4 seconds
-sleep(3)
+sleep(4)
 
 # select the search button
 #driver.find_element(By.NAME, 'btnK').click()
