@@ -38,7 +38,7 @@ assert text == "gifts for mom"
 #assert driver.find_element(*ACTUAL_AMAZON_TEXT).text == EXPECTED
 
 # driver.get('https://amazon.com')
-sleep(4)
+sleep(3)
 # driver.find_element(*AMAZON_SEARCH_FIELD).send_keys('gifts for mom', Keys.ENTER)
 # driver.find_element(*AMAZON_SEARCH_FIELD).click()
 # sleep(4)
