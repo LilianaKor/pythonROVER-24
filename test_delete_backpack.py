@@ -28,7 +28,7 @@ def test_add_item_into_cartLKor():
 
     shopping_cart_badge = browser.find_element(By.XPATH, "//span[@class='shopping_cart_badge']")
     assert shopping_cart_badge.is_displayed()
-    time.sleep(10)
+    time.sleep(5)
     print(shopping_cart_badge)
 
    # basket = browser.find_element(By.XPATH, "//span[@class='shopping_cart_badge']").text
