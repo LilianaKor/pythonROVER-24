@@ -26,5 +26,4 @@ def test_add_item_into_cartLKor():
     time.sleep(4)
     assert item_text_before == item_text_after
 
-
     browser.quit()

@@ -33,7 +33,7 @@ def test_transition_to_cart_by_name():
     # Click on the product name
     backpack_name = browser.find_element(By.XPATH, "//div[@class='inventory_item_name' and text()='Sauce Labs Backpack']")
     backpack_name.click()
-    time.sleep(4)
+    time.sleep(3)
 
     # Assertion to check if the correct product is displayed on the page
     product_title = browser.find_element(By.CSS_SELECTOR, "div[class='inventory_details_name']").text

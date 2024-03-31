@@ -40,7 +40,7 @@ def test_add_item_into_cartLKor():
 
     cart_badge_after = browser.find_element(By.XPATH, "//a[@class='shopping_cart_link']").text
     print(cart_badge_after)
-    time.sleep(2)
+    time.sleep(4)
     assert cart_badge_after == ''
     time.sleep(2)
 

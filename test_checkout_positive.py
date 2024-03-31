@@ -20,11 +20,11 @@ def test_checkout_positive():
    # assert 'inventory-item.html?id=4' in browser.current_url
     add_to_cart_button = browser.find_element(By.XPATH, "//button[text()='ADD TO CART']")
     add_to_cart_button.click()
-    time.sleep(5)
+    time.sleep(4)
 
     shopping_cart_link = browser.find_element(By.XPATH, "//a[@class='shopping_cart_link']")
     shopping_cart_link.click()
-    time.sleep(2)
+    time.sleep(3)
     assert 'cart.html' in browser.current_url
 
     # checkout_button = browser.find_element(By.XPATH, "//a[text()='CHECKOUT']")

@@ -62,10 +62,10 @@ def test_add_item_into_cartLKor():
     print(cart_badge_after)
  #    time.sleep(2)
     assert cart_badge_after == ''
- #    time.sleep(2)
+ #    time.sleep(3)
 
 # Verify if the item is removed from the cart
 # empty_cart_message = browser.find_element(By.CSS_SELECTOR, "div[class='cart_list']").text
-#assert "Your cart is empty" in empty_cart_message
+#assert "Your cart is empty" in empty_cart_message .
 
 
