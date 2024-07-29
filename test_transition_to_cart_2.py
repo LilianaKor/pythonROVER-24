@@ -28,6 +28,7 @@ def test_item_image():
 
     browser.quit()
 
+
 def test_transit_item_title():
     browser.get("https://www.saucedemo.com/")
 

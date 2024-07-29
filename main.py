@@ -5,6 +5,7 @@ import time
 
 browser = webdriver.Chrome()
 
+
 def test_auth_positive():
     browser.get('https://www.saucedemo.com/v1/')
 
@@ -16,6 +17,7 @@ def test_auth_positive():
 
     browser.quit()
 
+
 def test_auth_negative():
     browser.get('https://www.saucedemo.com/')
 
@@ -25,6 +27,3 @@ def test_auth_negative():
     error_message = browser.find_element(By.XPATH, '//div[@class = "error-message-container error"]')
     assert error_message.is_displayed()
     print(error_message.text)
-
-
-
