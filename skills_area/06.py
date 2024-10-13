@@ -6,6 +6,6 @@ def return_file_path(file_name):
     file_path = os.path.join(current_dir, file_name)
     return file_path
 
+
 file_name = "../.venv/files/json.json"
 print(return_file_path(file_name))
-
