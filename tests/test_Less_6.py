@@ -1,9 +1,11 @@
 import pytest
 import requests
-#import response
+
+# import response
 
 base_url = 'https://restful-booker.herokuapp.com/booking'
 auth_url = 'https://restful-booker.herokuapp.com/auth'
+
 
 def test_get_token():
     authdata = {
@@ -14,7 +16,7 @@ def test_get_token():
     token = response.json()["token"]
     print(token)
     assert response.status_code == 200
-    return  token
+    return token
 
 
 # def sum_it(x,y):
@@ -35,21 +37,21 @@ def test_get_code():
 def test_get_booking_by_id():
     response = requests.get(f'{base_url}/19')
     response_data = response.json()
-   # print(response_data)
+    # print(response_data)
     expected_keys = [
         "firstname",
         "lastname",
         "totalprice",
         "depositpaid",
         "bookingdates"
-       # "additionalneeds"
+        # "additionalneeds"
     ]
 
     assert response.status_code == 200
     for key in expected_keys:
         assert key in response_data.keys()
-    assert isinstance(response_data.get('firstname'),str)
-    assert isinstance(response_data.get('totalprice'),int)
+    assert isinstance(response_data.get('firstname'), str)
+    assert isinstance(response_data.get('totalprice'), int)
 
 
 def test_create_booking():
@@ -77,7 +79,7 @@ def test_check_created_booking():
     print(response.json())
     assert response.status_code == 200
     assert response.json()["firstname"] == "Alex"
-    #assert data["booking']["firstname"] == "Jim"
+    # assert data["booking']["firstname"] == "Jim"
 
 
 def test_update_booking():
@@ -96,12 +98,8 @@ def test_update_booking():
 
     }
 
-
     response = requests.put(f'{base_url}/{bookingid}', json=payload, headers={'Cookie': f'token= {token_value}'})
     assert response.status_code == 200
     response_2 = requests.get(f'{base_url}/{bookingid}')
     print(response_2.json())
     assert response_2.json()['additionalneeds'] == 'Spa'
-
-
-

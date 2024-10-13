@@ -19,6 +19,12 @@ def pytest_addoption(parser):
     parser.addoption('--browser')
 
 
+# *MacOs*
+#
+# `python3 -m venv venv   #создание виртуального окружения
+# source venv/bin/activate  #активация виртуального окружения`
+
+
 # @pytest.fixture()
 # def something(request: SubRequest):
 #     if request.config.getoption('--browser').upper() == 'FF':
